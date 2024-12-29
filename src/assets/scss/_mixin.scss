@@ -1,7 +1,7 @@
 @use "./variables";
 
 @mixin header {
-  position: fixed;
+  position: fixed; 
   width: 100%;
   top: 0;
   background-color: variables.$white-color;
