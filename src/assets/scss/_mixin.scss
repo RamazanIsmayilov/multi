@@ -1,0 +1,25 @@
+@use "./variables";
+
+@mixin header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: variables.$white-color;
+  box-shadow: 0px 0px 30px 0px rgba(163, 157, 163, 0.43);
+
+  .nav-end .language select {
+    border: 1px solid variables.$border-color;
+  }
+
+  .navbar-nav .nav-link.active {
+    color: variables.$red-color;
+    font-weight: 600;
+  }
+}
+
+@mixin footer {
+  position: fixed;
+  background-color: variables.$white-color;
+  bottom: 0;
+  width: 100%;
+}

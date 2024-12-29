@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="shortcut icon" href="../../assets/images/favicon.png" type="image/x-icon">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="login">
+        <div class="row gx-0">
+            <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                <div class="shape-one position-fixed fixed-top">
+                    <img width="300px" src="../../assets/images/shape.png" alt="shape-one">
+                </div>
+                <div class="login-form w-100 m-auto p-4">
+                    <h2>Welcome back!</h2>
+                    <form class="mt-4">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text bg-transparent">
+                                <img src="../../assets/images/sms.png" alt="sms">
+                            </span>
+                            <input type="email" class="form-control shadow-none" placeholder="Email">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-text bg-transparent">
+                                <img src="../../assets/images/lock.png" alt="">
+                            </div>
+                            <input id="passwordInput" type="password" class="form-control shadow-none pass-input"
+                                placeholder="Password">
+                            <button onclick="toggleIcon()" type="button" class="input-group-text bg-transparent"
+                                id="toggleIconButton">
+                                <i class="fa-regular fa-eye" id="icon"></i>
+                            </button>
+                        </div>
+                        <div class="submit-button">
+                            <button type="button" class="btn btn-danger w-100">Login</button>
+                        </div>
+                        <div class="bottom d-flex align-items-center justify-content-between mt-2">
+                            <div class="form-check">
+                                <input class="form-check-input shadow-none" type="checkbox" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Remember me
+                                </label>
+                            </div>
+                            <div class="forgot-password">
+                                <a href="#" class="text-danger text-decoration-underline">Forgot password?</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="login-cover"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./login.js"></script>
+
+</body>
+
+</html>

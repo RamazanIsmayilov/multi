@@ -1,0 +1,27 @@
+@use "../../assets/scss/variables";
+@use "../../assets/scss/mixin";
+
+header {
+  @include mixin.header;
+}
+
+footer {
+  @include mixin.footer;
+}
+
+.dashboard-page {
+  .rental-details,
+  .customer-statistic {
+    box-shadow: 0px 0px 51px 1px rgba(212, 209, 212, 0.43);
+    .head select {
+      border: 1px solid variables.$border-color;
+    }
+  }
+
+  .customer-statistic .body .customer-amount .description .customer .color {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgb(214, 21, 63);
+  }
+}
