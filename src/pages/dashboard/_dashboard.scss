@@ -1,13 +1,4 @@
 @use "../../assets/scss/variables";
-@use "../../assets/scss/mixin";
-
-header {
-  @include mixin.header;
-}
-
-footer {
-  @include mixin.footer;
-}
 
 .dashboard-page {
   .rental-details,

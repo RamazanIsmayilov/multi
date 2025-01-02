@@ -5,7 +5,16 @@
 @use "../../pages/login/_login";
 @use "../../pages/orders-dispatcher/_orders-dispatcher";
 @use "../../pages/orders/_orders";
+@use "../../pages/orders/new-orders/new-orders";
 @use "../../pages/report/_report";
+
+header {
+  @include mixin.header;
+}
+
+footer {
+  @include mixin.footer;
+}
 
 ::-webkit-scrollbar {
   width: 10px;

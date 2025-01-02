@@ -16,7 +16,7 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="./dashboard.html">
+                <a class="navbar-brand" href="../dashboard/dashboard.html">
                     <img src="../../assets/images/logo.png" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -27,7 +27,8 @@
                 <div class="collapse navbar-collapse justify-content-end gap-4" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-2 mb-2 mb-lg-0 gap-2">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../dashboard/dashboard.html">Dashboard</a>
+                            <a class="nav-link active" aria-current="page"
+                                href="../dashboard/dashboard.html">Dashboard</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="./orders.html">Orders</a>
@@ -60,16 +61,155 @@
         </nav>
     </header>
 
-    <footer class="d-flex align-items-center justify-content-center">
+    <div class="orders-page">
+        <div class="container">
+            <div class="orders-head">
+                <div class="row align-items-center gy-3">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="left d-flex align-items-center gap-2">
+                            <span>Show</span>
+                            <select class="form-select shadow-none w-auto">
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="25">25</option>
+                            </select>
+                            <span>entries</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="right d-flex align-items-center justify-content-md-end gap-3 flex-wrap">
+                            <select class="form-select shadow-none w-auto">
+                                <option value="">Pick up date time</option>
+                                <option value="">test</option>
+                                <option value="">test</option>
+                                <option value="">test</option>
+                            </select>
+                            <select class="form-select shadow-none w-auto">
+                                <option value="">Drop off date time</option>
+                                <option value="">test</option>
+                                <option value="">test</option>
+                                <option value="">test</option>
+                            </select>
+                            <a href="./new-orders/new-orders.html" class="btn btn-danger d-flex align-items-center gap-2">
+                                <img src="../../assets/images/plus.png" alt="plus" class="img-fluid"
+                                    style="height: 20px;">
+                                Create order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="orders-table mt-4">
+                <div class="table-responsive">
+                    <table class="table m-0">
+                        <thead>
+                            <tr>
+                                <th class="text-center text-white" scope="col">№</th>
+                                <th class="text-center text-white" scope="col">Order date</th>
+                                <th class="text-center text-white" scope="col">Car category</th>
+                                <th class="text-center text-white" scope="col">Car model</th>
+                                <th class="text-center text-white" scope="col">Pick up location</th>
+                                <th class="text-center text-white" scope="col">Pick up date time</th>
+                                <th class="text-center text-white" scope="col">Drop off location</th>
+                                <th class="text-center text-white" scope="col">Drop off date time</th>
+                                <th class="text-center text-white" scope="col">Status</th>
+                                <th class="text-center text-white" scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">#1</td>
+                                <td class="text-center">25/12/2024</td>
+                                <td class="text-center">Economy</td>
+                                <td class="text-center">Zeekr</td>
+                                <td class="text-center">Lorem ipsum</td>
+                                <td class="text-center">25/12/2024 15:30</td>
+                                <td class="text-center">Lorem ipsum</td>
+                                <td class="text-center">25/12/2024 15:30</td>
+                                <td class="text-center">
+                                    <span class="rounded-pill px-3 py-1"
+                                        style="background-color: #EBF9F1; color: #4E9D2D;">Accepted</span>
+                                </td>
+                                <td class="text-center">
+                                    <button class="bg-transparent border-0">
+                                        <img src="../../assets/images/edit.png" alt="edit" class="img-fluid"
+                                            style="height: 20px;">
+                                    </button>
+                                    <button class="bg-transparent border-0">
+                                        <img src="../../assets/images/trash.png" alt="trash" class="img-fluid"
+                                            style="height: 20px;">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">#1</td>
+                                <td class="text-center">25/12/2024</td>
+                                <td class="text-center">Economy</td>
+                                <td class="text-center">Zeekr</td>
+                                <td class="text-center">Lorem ipsum</td>
+                                <td class="text-center">25/12/2024 15:30</td>
+                                <td class="text-center">Lorem ipsum</td>
+                                <td class="text-center">25/12/2024 15:30</td>
+                                <td class="text-center">
+                                    <span class="rounded-pill px-3 py-1"
+                                        style="background-color: #F9EBEB; color: #DB3540;">Rejected</span>
+                                </td>
+                                <td class="text-center">
+                                    <button class="bg-transparent border-0">
+                                        <img src="../../assets/images/edit.png" alt="edit" class="img-fluid"
+                                            style="height: 20px;">
+                                    </button>
+                                    <button class="bg-transparent border-0">
+                                        <img src="../../assets/images/trash.png" alt="trash" class="img-fluid"
+                                            style="height: 20px;">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">#1</td>
+                                <td class="text-center">25/12/2024</td>
+                                <td class="text-center">Economy</td>
+                                <td class="text-center">Zeekr</td>
+                                <td class="text-center">Lorem ipsum</td>
+                                <td class="text-center">25/12/2024 15:30</td>
+                                <td class="text-center">Lorem ipsum</td>
+                                <td class="text-center">25/12/2024 15:30</td>
+                                <td class="text-center">
+                                    <span class="rounded-pill px-3 py-1"
+                                        style="background-color: #F9ECDD; color: #CE6200;">Pending</span>
+                                </td>
+                                <td class="text-center">
+                                    <button class="bg-transparent border-0">
+                                        <img src="../../assets/images/edit.png" alt="edit" class="img-fluid"
+                                            style="height: 20px;">
+                                    </button>
+                                    <button class="bg-transparent border-0">
+                                        <img src="../../assets/images/trash.png" alt="trash" class="img-fluid"
+                                            style="height: 20px;">
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="pagination">
+                
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="d-flex align-items-center justify-content-center mt-4 py-2">
         <span class="text-secondary">©<span id="year"></span> Uniser Group MMC. All Rights Reserved.</span>
     </footer>
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        <script src="./orders.js"></script>
+    <script src="./orders.js"></script>
 </body>
 
 </html>
